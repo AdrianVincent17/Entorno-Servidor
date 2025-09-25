@@ -13,10 +13,10 @@ define("DIRECCION", 'Albeniz,26');
 * imprimimos las constantes
 */
 
-echo "El valor de PI es: " .PI "<br>";
-echo "El limite es: " .LIMITE "<br>";
-echo "El nombre es: "  .NOMBRE "<br>";  
-echo "La direccion es: " .DIRECCION "<br>";
+echo "El valor de PI es: " .PI. "<br>";
+echo "El limite es: " .LIMITE ."<br>";
+echo "El nombre es: "  .NOMBRE ."<br>";  
+echo "La direccion es: " .DIRECCION ."<br>";
 
   
 
