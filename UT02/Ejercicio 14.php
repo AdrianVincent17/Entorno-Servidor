@@ -11,9 +11,10 @@ $diasSemana = array(
 );
 // Mostrar el array completo
 print_r($diasSemana);
-echo "\n";  
+echo "\n"; 
+echo "<br>"; 
 // Mostrar cada día con su abreviatura en una línea separada
 foreach ($diasSemana as $dia => $abreviatura) {
-    echo "$dia: $abreviatura\n";
+    echo "$dia: $abreviatura<br>";
 }   
 ?>
