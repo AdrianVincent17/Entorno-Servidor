@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 1</title>
+    <title>Ejercicio 2</title>
 </head>
 <body>
      <?php
@@ -15,14 +15,9 @@
        if (isset($_POST['num1']) && isset($_POST['num2'])) {
         $num1=(float) $_POST['num1'];
         $num2=(float) $_POST['num2'];
-        $sum= $num1+$num2;
-        $res=$num1-$num2;
-        $mul=$num1*$num2;
-        $divi=$num1/$num2;
-        $sum="La suma de los números introducidos es --> $sum";
-        $res="La resta de los números introducidos es --> $res";
-        $mul="La multiplicacion de los números introducidos es --> $mul";
-        $divi="La division de los números introducidos es --> $divi";
+        $aux=$num1;
+        $num1=$num2;
+        $num2=$aux;
        }else
         $sum="Introduce solo numeros";
     }
@@ -41,16 +36,14 @@
 
         <?php
 
-        if (isset($sum) && isset($res) && isset($mul) && isset($divi)){
-        echo "$sum .<br>";
-        echo "$res .<br>";
-        echo "$mul .<br>";
-        echo "$divi .<br>";
+        if (isset($num1) && isset($num2)){
+        echo "El valor 1 es: $num1 .<br>";
+        echo "El valor 2 es: $num2 .<br>";
         }
 
         ?>
         
-        <p><input type="submit" name="login" value="calcular"></p>
+        <p><input type="submit" name="login" value="intercambiar valores"></p>
         
        
 
