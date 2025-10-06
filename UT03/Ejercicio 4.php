@@ -14,7 +14,7 @@
     if ($_SERVER['REQUEST_METHOD']==='POST'){
        if (isset($_POST['listado']) && ($_POST['listado'])!=="") {
         $listado=$_POST['listado'];
-        $listado=explode(" ",$listado);
+        $listado=explode(",",$listado);
 
     }
 
@@ -37,13 +37,23 @@
       
 
         if (isset($listado)){
-            echo "Lista de numeros <br>";
-            foreach($listado as $indice => $valor){
-                echo $indice+1 ."---> $valor <br>";
+                    $array=[];
+                foreach($listado as $valor){
+                if (is_numeric($valor)){
+                    $array[]=$valor;
+                }
+                }
+             if (count($array)!=7){
+                echo "Debes introducir 7 numeros <br>";
+            }else{
+                foreach($array as $indice => $valor){
+                echo "El numero ".($indice+1)." es --->$valor <br>";
+                }
+            
             }
-    
-       
+           
         }
+    
 
         ?>
         
