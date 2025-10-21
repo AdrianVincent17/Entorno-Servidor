@@ -1,17 +1,6 @@
 <html>
 <head></head>
 <body>
-<form action="altas.php" method="post" enctype="multipart/form-data">
-    <fieldset>
-        <legend>Eliminacion de productos</legend>
-
-        <label for="eliminar">Producto para eliminar</label>
-        <select name="eliminar" id="eliminar" disabled="disabled">
-        </select>
-
-        <input type="submit" value="eliminar">
-        
-    </fieldset>
     <?php
 
         include("conexion.php");
@@ -45,9 +34,6 @@
 
 
     ?>
-
-
-	</form>
 	<p><a href="menu.php"> Volver al menu</a></p>
 </body>
 </html>

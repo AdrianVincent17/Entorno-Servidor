@@ -17,5 +17,6 @@ echo mysqli_error($conn );
 $ruta=$ima;
 COPY($_FILES["imagen"]["tmp_name"],$ruta);
 //redireccionamos a la web listados (este fichero lo debeis de crar vosotros)
+mysqli_close($conn);
 header ("LOCATION:listado.php");
 ?>

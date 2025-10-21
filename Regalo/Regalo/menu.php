@@ -4,7 +4,8 @@
 
 <p><a href="listado.php"> Listado de Productos</a></p>
 <p><a href="formulario_altas.php"> Altas de Productos</a></p>
-<p><a href="formulario_bajas.php"> Bajas de Productos</a></p>
+<p><a href="formulario_bajas.php"> Bajas de Productos (Nivel-facil)</a></p>
+<p><a href="formulario_bajas2.php"> Bajas de Productos (Nivel-dificil)</a></p>
 <p><a href="formulario_seleccion_registro.php"> Modificaciom de Productos</a></p>
 
 </body>
