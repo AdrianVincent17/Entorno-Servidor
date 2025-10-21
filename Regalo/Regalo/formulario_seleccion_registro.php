@@ -2,11 +2,11 @@
 <head></head>
 <body>
 
-<h1>Eliminar producto version 2</h1>
-<h2>Producto que desea eliminar</h2>
+<h1>Modificacion productos</h1>
+<h2>Producto que desea modificar</h2>
 
-    <form action="bajas2.php" method="POST">
-        <select name="deleteCodigo" id="deleteCodigo">
+    <form action="modificacion.php" method="POST" >
+        <select name="updateCodigo" id="updateCodigo">
     <?php
 
         include("conexion.php");
@@ -22,10 +22,11 @@
         }
     ?>
      </select>
-     <input type="submit" value="Eliminar">
+     <input type="submit" value="Modificar">
      </form>
     <?php
     mysqli_close($conn);
+  
     ?>
 	<p><a href="menu.php"> Volver al menu</a></p>
 </body>
