@@ -1,11 +1,13 @@
 <html>
 <head></head>
 <body>
+
     <?php
 
         include("conexion.php");
 
         $consulta="select * from productos";
+        
         $result=mysqli_query($conn,$consulta);
 
          //creamos la conexion
