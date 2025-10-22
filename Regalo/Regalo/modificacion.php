@@ -18,15 +18,16 @@
 	 $pro=$row['producto'];
 	 $pre=$row['precio'];
 	 $des=$row['descuento'];
+	 $imag=$row['imagen'];
     ?>
 
-	<form action="listado.php" method="post">
+	<form action="modificacion2.php" method="post">
 	<table width="400" border="0">
 	<tr>
-		<td colspan="4">MODIFICACION DE PRODUCTOS </td>
+		<td colspan="4">MODIFICACIÓN DE PRODUCTOS </td>
 	</tr>
 	<tr>
-		<td>Codigo</td> <td><input type="text" name="codigo" value="<?php echo $cod;?>"required /></td>
+		<td>Codigo</td> <td><input type="text" name="codigo" value="<?php echo $cod;?>"required readonly /></td>
 		<td>Producto</td> <td><input type="text" name="producto" value="<?php echo $pro;?>" required /></td>
 	</tr>
 	<tr>
@@ -37,7 +38,7 @@
 		<td>Descuento</td> <td><input type="text" name="descuento" value="<?php echo $des;?>" required /></td>
 	</tr>
 	<tr> 
-		<td> Imagen </td> <td><input type="file" name="imagen"required /></td>
+		<td></td> <td><input type="hidden" name="imagen" value=" <?php echo $imag;?>"required /></td>
 	</tr>	
 	<tr>
 		<td colspan="2"><input type="submit" name="button" value="Enviar"/></td>

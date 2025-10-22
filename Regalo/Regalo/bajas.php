@@ -4,7 +4,7 @@ include("conexion.php");
 $codigoAeliminar = $_GET['codEliminar'];
 
 
-$consulta = "DELETE form productos where codigo='$codigoAeliminar'";
+$consulta = "DELETE from productos where codigo='$codigoAeliminar'";
 
 mysqli_query($conn, $consulta);
 
