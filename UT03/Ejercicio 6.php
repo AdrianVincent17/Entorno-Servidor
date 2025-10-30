@@ -14,10 +14,6 @@
     if ($_SERVER['REQUEST_METHOD']==='POST'){
        if (isset($_POST['num']) && ($_POST['num'])!=="") {
         $num=$_POST['num'];
-        
-     
-
-     
 
     }
 
@@ -53,7 +49,7 @@
 
     </fieldset>
   </form>
-  <script>
+
 
  
 </body>

@@ -47,7 +47,6 @@
 
         if (isset($dia)){
         echo "$dia <br>";
-       
         }
 
         ?>
@@ -58,7 +57,7 @@
 
     </fieldset>
   </form>
-  <script>
+
 
  
 </body>

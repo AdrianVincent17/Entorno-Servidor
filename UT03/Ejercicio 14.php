@@ -7,6 +7,8 @@
 </head>
 <body>
      <?php
+
+     include("funciones/funciones.php");
     /*
     *procesamos si se ha enviado el formulario 
     */
@@ -34,35 +36,17 @@
 
         <?php
 
-        function multinums($num1,$num2){
-            return $num1*$num2;
-        }
-
         
-        function sumanums($num1,$num2){
-            return $num1+$num2;
-        }
-        
-        function restanums($num1,$num2){
-            return $num1-$num2;
-        }
-        
-        function divnums($num1,$num2){
-            if($num2==0){
-                return "no se puede dividir entre 0";
-            }else{
-                return $num1/$num2;
-            }
             
-        }
+        
 
         if (isset($num1) && isset($num2) ){
             
             echo "<br>";
-            echo "la suma de los numeros es ".sumanums($num1,$num2) ."<br>";
-            echo "la multiplicacion de los numeros es ".multinums($num1,$num2) ."<br>";
-            echo "la resta de los numeros es ".restanums($num1,$num2) ."<br>";
-            echo "la division de los numeros es ".divnums($num1,$num2) ."<br>";
+            echo "la suma de los numeros es ".sumar($num1,$num2) ."<br>";
+            echo "la multiplicacion de los numeros es ".multiplicar($num1,$num2) ."<br>";
+            echo "la resta de los numeros es ".restar($num1,$num2) ."<br>";
+            echo "la division de los numeros es ".dividir($num1,$num2) ."<br>";
        
         }
 
@@ -74,7 +58,7 @@
 
     </fieldset>
   </form>
-  <script>
+
 
  
 </body>

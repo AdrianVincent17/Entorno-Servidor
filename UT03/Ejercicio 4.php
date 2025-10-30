@@ -27,7 +27,7 @@
     <fieldset>
         <legend>Lista de numeros</legend>
         <label>Introduce 7 numeros</label>
-        <input name="listado" id="listado" type="text" step="any" size="40" maxlength="100" placeholder="(Separalos por un espacio)" required>
+        <input name="listado" id="listado" type="text" size="40" maxlength="100" placeholder="(Separalos por una coma)" required>
         <br>
         <br>
     
@@ -37,19 +37,12 @@
       
 
         if (isset($listado)){
-                    $array=[];
-                foreach($listado as $valor){
-                if (is_numeric($valor)){
-                    $array[]=$valor;
-                }
-                }
-             if (count($array)!=7){
+             if (count($listado)<7 || !is_numeric($listado)){
                 echo "Debes introducir 7 numeros <br>";
             }else{
-                foreach($array as $indice => $valor){
+                foreach($listado as $indice => $valor){
                 echo "El numero ".($indice+1)." es --->$valor <br>";
                 }
-            
             }
            
         }
@@ -63,7 +56,7 @@
 
     </fieldset>
   </form>
-  <script>
+
 
  
 </body>
